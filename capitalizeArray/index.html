@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Capitalize Array</title>
+  </head>
+  <body>
+    <h1>Open the console to see the magic!</h1>
+
+    <script type="text/javascript">
+      // Creates an array called animals.
+      var animals = ["parrot", "cat", "dog"];
+
+      for (i = 0; animals.length > i; i++) {
+        let newArray = [];
+        // using char at to reach first letter then capitalizing it then using substr method to return the rest of the string after the o index of string
+        animals[i] = animals[i].charAt(0).toUpperCase() + animals[i].substr(1);
+        console.log(animals[i]);
+      }
+    </script>
+  </body>
+</html>
